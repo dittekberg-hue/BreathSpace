@@ -1,3 +1,7 @@
+<script>
+	import { goto } from '$app/navigation';
+</script>
+
 <div class="min-h-screen bg-base-100 p-8">
 	<header class="mb-10 flex items-center justify-center gap-4">
 		<div class="rounded-2xl bg-blue-50 p-4 text-2xl text-success">〰️</div>
@@ -6,28 +10,34 @@
 
 	<main class="mx-auto grid max-w-5xl grid-cols-3 gap-8">
 		<section class="flex flex-col gap-10 rounded-none bg-slate-400 p-8">
-			<button class="btn rounded-full border-2 border-neutral bg-blue-100 text-neutral">
+			
+			<button
+				class="btn rounded-full border-2 border-neutral bg-blue-100 text-neutral"
+				onclick={() => goto('/under-udvikling')}
+			>
 				Book Videokonsultation →
 			</button>
 
-			<button class="btn rounded-full border-2 border-neutral bg-blue-100 text-neutral">
-				Afspil Podcast 
+			<button
+				class="btn rounded-full border-2 border-neutral bg-blue-100 text-neutral"
+				onclick={() => goto('/under-udvikling')}
+			>
+				Afspil Podcast
 			</button>
 
-			
-			<a
-				href="/anfald"
+			<button
 				class="btn rounded-full border-2 border-neutral bg-blue-100 text-neutral"
+				onclick={() => goto('/anfald')}
 			>
 				Dokumenter Anfald
-			</a>
-			
-			<a
-				href="/videokonsultation"
+			</button>
+
+			<button
 				class="btn rounded-full border-2 border-neutral bg-blue-100 text-neutral"
+				onclick={() => goto('/videokonsultation')}
 			>
 				Gå til Videokonsultation →
-			</a>
+			</button>
 		</section>
 
 		<section class="bg-slate-300 p-6 text-center text-neutral">
