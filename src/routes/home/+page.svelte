@@ -11,15 +11,22 @@
 			</button>
 
 			<button class="btn rounded-full border-2 border-neutral bg-blue-100 text-neutral">
-				Afspil Podcast 🔊
+				Afspil Podcast 
 			</button>
 
-			<!-- 🔥 HER er ændringen -->
+			
 			<a
 				href="/anfald"
 				class="btn rounded-full border-2 border-neutral bg-blue-100 text-neutral"
 			>
 				Dokumenter Anfald
+			</a>
+			
+			<a
+				href="/videokonsultation"
+				class="btn rounded-full border-2 border-neutral bg-blue-100 text-neutral"
+			>
+				Gå til Videokonsultation →
 			</a>
 		</section>
 

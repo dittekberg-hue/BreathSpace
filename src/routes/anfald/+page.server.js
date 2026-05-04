@@ -18,11 +18,11 @@ export const actions = {
 		const anfaldstype = data.get('anfaldstype');
 		const efterAnfald = data.get('efterAnfald');
 
-		if (!dato || !svaerhedsgrad || !anfaldstype) {
-			return fail(400, {
-				message: 'Udfyld dato, sværhedsgrad og anfaldstype'
-			});
-		}
+		if (!dato || !anfaldstype || ![1, 2, 3, 4, 5].includes(svaerhedsgrad)) {
+	        return fail(400, {
+		        message: 'Udfyld dato, sværhedsgrad og anfaldstype korrekt'
+	        });
+        }
 
 		await db.insert(anfald).values({
 			brugerId: Number(brugerId),
