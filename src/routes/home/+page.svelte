@@ -12,10 +12,10 @@
 		<section class="flex flex-col gap-10 rounded-none bg-slate-400 p-8">
 			
 			<button
-				class="btn rounded-full border-2 border-neutral bg-blue-100 text-neutral"
+				class="btn rounded-full border-2 border-neutral bg-blue-100 text-neutral px-6 py-3 text-lg"
 				onclick={() => goto('/under-udvikling')}
 			>
-				Book Videokonsultation →
+				Book Videokonsultation
 			</button>
 
 			<button
@@ -33,10 +33,17 @@
 			</button>
 
 			<button
-				class="btn rounded-full border-2 border-neutral bg-blue-100 text-neutral"
+				class="btn rounded-full border-2 border-neutral bg-blue-100 text-neutral px-6 py-3 text-lg"
+				onclick={() => goto('/se-anfald')}
+			>
+				Se registrerede anfald
+			</button>
+
+			<button
+				class="btn rounded-full border-2 border-neutral bg-blue-100 text-neutral px-6 py-3 text-lg"
 				onclick={() => goto('/videokonsultation')}
 			>
-				Gå til Videokonsultation →
+				Gå til Videokonsultation
 			</button>
 		</section>
 
